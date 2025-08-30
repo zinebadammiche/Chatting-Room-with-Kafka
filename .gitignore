@@ -1,5 +1,5 @@
 # Node modules (frontend)
-frontend/node_modules/
+Frontendapp/node_modules/
 
 # Lock files (frontend)
-frontend/package-lock.json
+Frontendapp/package-lock.json
