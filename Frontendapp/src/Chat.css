@@ -1,0 +1,147 @@
+/* Container général */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a3f);
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+/* Login */
+.login-box {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+.login-input {
+  width: 200px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Chat box */
+.chat-box {
+  width: 400px;
+  height: 500px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 12px;
+  padding: 20px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.chat-messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Messages */
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  max-width: 80%;
+}
+
+.message-sent {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+.message-received {
+  flex-direction: row;
+  margin-right: auto;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.message-content {
+  background: rgba(255,255,255,0.2);
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.message-sent .message-content {
+  background: #3399ff;
+  color: #fff;
+}
+
+.username {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.text {
+  word-wrap: break-word;
+}
+
+/* Input box */
+.input-box {
+  width: 400px;
+  display: flex;
+  margin-top: 15px;
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  font-size: 16px;
+}
+
+.send-btn {
+  padding: 10px 20px;
+  border-radius: 0 20px 20px 0;
+  background-color: #3399ff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #1d78d1;
+}
+
+/* Scrollbar custom */
+.chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.3);
+}
+.chat-box::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .chat-box, .input-box {
+    width: 90%;
+  }
+}
