@@ -1,0 +1,5 @@
+# Node modules (frontend)
+frontend/node_modules/
+
+# Lock files (frontend)
+frontend/package-lock.json
